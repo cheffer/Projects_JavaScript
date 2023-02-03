@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta >
+	<title>Timer</title>
+
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Meta tag -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Bruno Cheffer Belinassi">
+	<meta name="description" content="Timer project to train JavaScript">
+	<meta name="keywords" content="Cronometro, Temporizador, Timer">
+		
+</head>
+<body>
+	<audio id="sound" src="sound/alarm.mp3" style="display: none;"></audio>
+	<div class="container">
+		<header>
+			<div class="menu">
+				<div class="link_menu">
+					<div class="menu-wraper">
+						<a href="index.html">Stopwatch</a>
+					</div> <!-- /menu-weaper -->
+				</div> <!-- /link_menu -->
+				<div class="link_menu">
+					<div class="menu-wraper menu_selected">
+						<a href="timer.html">Timer</a>				
+					</div> <!-- /menu-weaper -->
+				</div> <!-- /link_menu -->
+			</div> <!-- /menu -->
+		</header>
+
+		<section>
+			
+			<div class="timer_box">
+				<input class="select_time" id="t_hours" type="number" min="0" max="99" placeholder="00">
+				<p>:</p>
+				<input class="select_time" id="t_minutes" type="number" min="0" max="59" placeholder="00">
+				<p>:</p>
+				<input class="select_time" id="t_seconds" type="number" min="0" max="59" placeholder="00">
+			</div> <!-- /timer_box -->
+			<div id="id_timer_box" class="timer_box">
+				<h2 id="tm_hours">00</h2>
+				<p>:</p>
+				<h2 id="tm_minutes">00</h2>
+				<p>:</p>
+				<h2 id="tm_seconds">00</h2>
+			</div> <!-- /timer_box -->			
+		
+			<div id="btns">
+				<button class="btn" id="btn_reset">Reset</button>
+			  	<button class="btn" id="btn_start">Start</button>			
+			</div>
+		</section>
+		
+	</div> <!-- /container -->
+
+	<script src="js/functions.js"></script>
+</body>
+</html>

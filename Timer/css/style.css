@@ -1,0 +1,172 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+}
+
+/* General */
+
+body {
+	background:#2d2d2d;
+
+}
+
+.container{
+	width: 50%;
+	max-width: 500px;
+	margin: 0 auto;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+/* /General */
+
+/* Header */
+
+header {
+	width: 100%;
+}
+
+header .menu{
+	text-align: center;
+	height: 90px;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #464646;
+	border-radius: 20px;
+}
+
+.link_menu{
+	display: inline-block;
+	width: 35%;
+	height: 60px;
+	text-align: center;
+	border-right: 2px solid #999999;
+	border-left: 2px solid #999999;
+}
+
+.menu-wraper {
+	z-index: 888;
+	padding: 15px 0;
+	margin: 0 5%;
+	width: 90%;
+	height: 100%;
+	line-height: 30px;
+	font-size: 0.8vw;
+	border-radius: 20px;
+}
+
+.menu_selected {
+	background-image: url('../img/luz12.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;	
+}
+
+header .menu a{
+	z-index: 999;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #f0f0f0;
+	font-size: 2.5em;
+}
+
+.menu-wraper:hover{
+	background-image: url('../img/luz3.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;	
+}
+
+header .menu div:first-child{
+	border-left: 0;
+}
+
+header .menu div:last-child{
+	border-right: 0;
+}
+
+/* /Header */
+
+/* Section Timer */
+
+section{
+	width: 100%;
+	background-color: #ccc;
+	border-radius: 35px;
+}
+
+section > div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 25px;
+	padding: 50px 2%;
+}
+
+section #timer{
+	font-size: 6vw;
+	color:#343434;
+}
+
+section div.timer_box{
+	height: 30px;	
+	font-size: 3vw;
+}
+
+.timer_box p {
+	font-size: 3vw;
+}
+
+.select_time {
+	border: 0;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 2vw;
+	background-color: transparent;
+}
+
+.select_time:focus {
+	outline: none;
+}
+
+#id_timer_box {
+	display: none;
+}
+
+button {
+	outline: none;
+}
+
+button:focus {
+	opacity: 1;
+}
+
+.btn{
+	border: 0;
+	width: 50%;
+	margin: 0 10px;
+	height: 35px;
+	border-radius: 10px;
+	opacity: 0.7;
+}
+
+#btn_reset{
+	background-color: #464646;
+	color: #6e6e6e;
+	cursor: auto;
+}
+
+#btn_start{
+	background-color: #005cc5;
+	color: #f0f0f0;
+	cursor: pointer;
+}
+
+
+/* /Section Timer */
