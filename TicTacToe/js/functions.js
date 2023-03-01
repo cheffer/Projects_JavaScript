@@ -20,6 +20,7 @@ let curValuePlay = 'X';
 let linesCells = ['', '', '', '', '', '', '', '', ''];
 
 let filledCellsCount = 0;
+let win = false;
 
 //take all the elements of the board
 const cells = document.querySelectorAll('.cell');
@@ -98,7 +99,6 @@ function checkWin() {
 		const a = combo[0];
 		const b = combo[1];
 		const c = combo[2];
-
 		
 		if ((linesCells[a] !== '' && linesCells[a] === linesCells[b] && linesCells[a] === linesCells[c])&&(linesCells[a] == 'X' || linesCells[a] == 'O')) {
 			cells[a].style.backgroundColor = '#28b53f';
@@ -119,14 +119,17 @@ function checkWin() {
 					cell.style.color = '#fff';
 					cell.style.backgroundColor = '#fff';
 				};
-			});			
+			});	
+			win = true;
+			return;
 		} ;
+
 	};
 };
 
 //function to check if there is a tie
 function checkDraw() {
-  if (filledCellsCount === 9 && !checkWin()) {
+  if (filledCellsCount === 9 && !win) {
     scores.E++;
     elPointE.innerHTML = scores.E.toString().padStart(2, '0');
 
@@ -151,6 +154,7 @@ function newGame(){
 		cell.style.backgroundColor = '#fff';
 	});
 	colorCell();
+	win = false;
 };
 
 //function to indicate the label whose turn it is
