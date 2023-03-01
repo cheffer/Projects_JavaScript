@@ -1,0 +1,189 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+	background-color: #2d2d2d;
+}
+
+.clear {
+	clear: both;
+}
+
+.container {
+	width: 70%;
+	height: auto;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 15px 2%;
+	background-color: #464646;
+}
+
+.players {
+	text-align: center;
+	font-size: 1.6vw;
+	height: 100px;
+	margin: 0;
+	padding: 15px 2%;
+	background-color: #ccc;
+	border: 3px solid #2d2d2d;
+	border-radius: 15px;
+	box-shadow: 10px 10px 15px;
+}
+
+.pointCounter {
+	display: inline-block;
+	height: auto;
+}
+
+.pointCounter span, .pointCounter span{
+	font-size: 2vw;
+	display: block;
+}
+
+.players > span {
+	font-weight: bold;
+}
+
+.player1 {
+	width: 45%;
+	float: left; 
+}
+
+.player2 {
+	width: 45%;
+	float: right;
+}
+
+.painel2 {
+	text-align: center;
+	height: 100px;
+	margin: 30px auto;
+	padding: 15px 2%;
+}
+
+#yourTurnP1, #yourTurnP2 {
+	float: left;
+	width: 33.3%;
+	font-size: 2vw;
+	color: #fff;
+	opacity: 0;
+	text-shadow: 0 5px 5px #ff5757;
+
+}
+
+#yourTurnP1 {
+	opacity: 1;
+	background-image: url('../img/luz3.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+.tie {
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	font-size: 1.6vw;
+	line-height: 20px;
+	padding: 8px 0;
+	background-color: #ccc;
+	border: 3px solid #2d2d2d;
+	border-radius: 15px;
+	box-shadow: 10px 10px 15px;
+}
+
+.tie span{
+	font-size: 2vw;
+}
+
+
+.tie h3 {
+	margin-bottom: 10px;
+}
+
+h2 {
+	display: inline-block;
+}
+
+section.game {
+	width: 270px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	box-shadow: 10px 10px 15px;
+	background-color: #fff;
+}
+
+.cell{
+	width: 90px;
+	height: 90px;
+	box-sizing: border-box;
+	font-size: 50px;
+	text-align: center;
+	line-height: 90px;
+	cursor: pointer;
+}
+
+
+.l1, .l2{	
+	border-bottom: 1px solid #000;
+}
+
+.l3, .l2{	
+	border-top: 1px solid #000;
+}
+
+.c1, .c2{
+	border-right: 1px solid #000;
+}
+
+.c3, .c2 {
+	border-left: 1px solid #000;
+}
+
+.footer{
+	width: 80%;
+	height: 40px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.btn{
+	width: 200px;
+	height: 40px;
+	border: 0;
+	border-radius: 10px;	
+	font-size: 18px;
+	cursor: pointer;
+	box-shadow: 2px 2px 4px;
+	margin: 0 4%;
+}
+
+.btnNew{
+	background-image: linear-gradient(#2c9c3e, #85ed96);
+	border-bottom: 3px solid #2c9c3e;
+	color: #fff;	
+}
+
+.btnNew:hover{
+	background-image: none;
+	background-color: #2c9c3e;
+	border-bottom: 3px solid #85ed96;	
+}
+
+.btnReset{
+	background-image: linear-gradient(#3271a8, #95c8f5);
+	border-bottom: 3px solid #3271a8;
+	color: #fff;	
+}
+
+.btnReset:hover{
+	background-image: none;
+	background-color: #3271a8;
+	border-bottom: 3px solid #95c8f5;
+}
+

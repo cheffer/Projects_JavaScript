@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Bruno Cheffer Belinassi">
+	<meta name="description" content="Project Game Tic Tac Toe to train JavaScript">
+	<meta name="keywords" content="tic tac toe, game, tictactoe">
+
+	<title>Tic Tac Toe</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="players">
+				<div class="player1">
+					<input type="color" id="cP1">
+					<div class="pointCounter">
+						<h2 id="player1">Player 1</h2>
+						<span id="pointP1">00</span>
+					</div> <!-- /pointCounter -->
+				</div> <!-- /player1 -->
+				<span>VS</span>
+				<div class="player2">
+					<div class="pointCounter">
+						<h2 id="player2">Player 2</h2>
+						<span id="pointP2">00</span>					
+					</div> <!-- /pointCounter -->
+					<input type="color" id="cP2">
+				</div> <!-- /player2 -->
+			</div> <!-- /players -->
+			<div class="painel2">
+				<div id="yourTurnP1">
+					<h2>Sua Vez</h2>
+				</div>
+				<div class="tie">
+					<h3>Empates</h3>
+					<span id="pointE">00</span>
+				</div> <!-- /tie -->
+				<div id="yourTurnP2">
+					<h2>Sua Vez</h2>
+				</div>
+			</div>
+			<div class="clear"></div>
+			
+		</header>
+
+		<section class="game">
+			<div class="cell l1 c1" id="l1c1"></div>
+			<div class="cell l1 c2" id="l1c2"></div>
+			<div class="cell l1 c3" id="l1c3"></div>
+			<div class="cell l2 c1" id="l2c1"></div>
+			<div class="cell l2 c2" id="l2c2"></div>
+			<div class="cell l2 c3" id="l2c3"></div>
+			<div class="cell l3 c1" id="l3c1"></div>
+			<div class="cell l3 c2" id="l3c2"></div>
+			<div class="cell l3 c3" id="l3c3"></div>
+		</section> <!-- /game -->
+
+		<div class="footer">
+			<input type="button" class="btn btnNew" id="btn_new_game" value="New Game">
+			<input type="button" onclick="location.reload()" class="btn btnReset" id="btn_reset_points" value="Reset Points">
+		</div> <!-- /footer -->
+
+	</div> <!-- /container -->
+
+	<!-- JavaScript -->
+	<script src="js/functions.js"></script>
+
+</body>
+</html>
