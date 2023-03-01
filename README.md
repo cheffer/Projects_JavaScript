@@ -20,6 +20,7 @@ I created this repository to be able to put all my training projects focused on 
 | SR No | Project                                                                                                                                           |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 |   1   | [Timer](https://github.com/cheffer/Projects_JavaScript/tree/main/Timer)                                                                           |
+|   2   | [TicTacToe](https://github.com/cheffer/Projects_JavaScript/tree/main/TicTacToe)                                                                           |
 
 # Languages and others
 
